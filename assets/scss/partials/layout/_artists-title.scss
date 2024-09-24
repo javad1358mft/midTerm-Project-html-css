@@ -1,0 +1,19 @@
+
+.artists-title{
+    width: 100%;
+    height: 120px;
+}
+h1::after{
+    content: "";
+    background-color:white;
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    transform: scale(0);
+}
+
+h1:hover::after{
+    transform: scale(1);
+    transition: 0.5s;  
+}
+

@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: $bg-card-content;
+  @include flex-perfect ;
+  @include flex-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .basket {
+    opacity: 0;
+  }
+
+  .magnifier {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,365 @@
+@font-face {
+  font-family: helvetica;
+  src: url("/assets/css/fonts/Helvetica.ttf");
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nav i {
+  padding: 15px;
+  font-size: larger;
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .basket {
+    opacity: 0;
+  }
+  .magnifier {
+    opacity: 0;
+  }
+}
+.logo {
+  padding: 10px;
+}
+.logo img {
+  width: 120px;
+  height: 50px;
+}
+.logo i {
+  font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+  .head {
+    position: relative;
+  }
+  .head img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  .head .head__chevron {
+    color: rgb(254, 248, 248);
+    font-size: 1rem;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    animation: chevron 0.5s infinite alternate;
+  }
+}
+@media screen and (min-width: 768px) {
+  .head img {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .head .head__chevron {
+    color: rgb(254, 248, 248);
+    font-size: 2rem;
+    position: absolute;
+    bottom: -10%;
+    right: 48%;
+    animation: chevron 0.5s infinite alternate;
+  }
+}
+.title {
+  width: 100%;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-family: helvetica;
+  letter-spacing: 2px;
+  color: white;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 25px;
+    font-family: helvetica;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 400px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .card span {
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    padding: 10px 60px 10px 40px;
+    transform: rotate(45deg);
+    color: #FFF8E8;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .card-content {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .card-content a {
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    background-color: #4F75FF;
+    color: #FFF8E8;
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+    height: auto;
+    margin: auto 2px;
+    border: 2px solid black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    right: -50px;
+    padding: 10px 60px 10px 40px;
+    transform: rotate(45deg);
+    color: #FFF8E8;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+.container {
+  display: flex;
+}
+
+.card-content {
+  text-align: center;
+  padding: 20px 0;
+}
+.card-content a {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px 20px;
+  background-color: #4F75FF;
+  color: #FFF8E8;
+  text-decoration: none;
+}
+
+@keyframes chevron {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
+@media screen and (max-width: 768px) {
+  @keyframes chevron {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .artists-card {
+    display: block;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .artists-card {
+    display: flex;
+    width: 50%;
+    height: 605px;
+  }
+  .card-body {
+    border-radius: 8px;
+  }
+  .todd,
+  .dom {
+    width: 50%;
+    height: 400px;
+    margin: 15px 3px;
+  }
+  .dom img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  .todd img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer i {
+    font-size: 50px;
+    padding: 10px 70px;
+  }
+  .footer h6 {
+    text-align: center;
+    margin-top: 0;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  .facebook:hover h6 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.7s;
+  }
+  .Email:hover h6 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s;
+  }
+  .twitter:hover h6 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s;
+  }
+  .telegram:hover h6 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s;
+  }
+  .instagram:hover h6 {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .artists-card {
+    width: 100%;
+    height: 820px;
+  }
+  .footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer i {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .footer h6 {
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  @keyframes email {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(50px);
+    }
+  }
+}
+.Email {
+  animation: email 2s infinite alternate ease-in-out;
+}
+
+.telegram {
+  animation: email 2.5s infinite alternate ease-in-out;
+}
+
+.instagram {
+  animation: email 2.4s infinite alternate ease-in-out;
+}
+
+.twitter {
+  animation: email 3s infinite alternate ease-in-out;
+}
+
+.facebook {
+  animation: email 2.9s infinite alternate ease-in-out;
+}
+
+.row img:hover {
+  transform: scale(1.1);
+}
+
+.artists-title {
+  width: 100%;
+  height: 120px;
+}
+
+h1::after {
+  content: "";
+  background-color: white;
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  transform: scale(0);
+}
+
+h1:hover::after {
+  transform: scale(1);
+  transition: 0.5s;
+}

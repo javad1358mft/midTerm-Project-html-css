@@ -1,0 +1,41 @@
+@media screen and (min-width:768px) {
+
+
+
+    @keyframes email {
+        from {
+            transform: translateX(0px);
+        }
+
+        to {
+            transform: translateX(50px);
+        }
+
+        // 50% {
+        //     transform: translateX(-20px);
+        // }
+
+
+    }
+
+}
+
+.Email {
+    animation: email 2s infinite alternate ease-in-out;
+}
+
+.telegram {
+    animation: email 2.5s infinite alternate ease-in-out;
+}
+
+.instagram {
+    animation: email 2.4s infinite alternate ease-in-out;
+}
+
+.twitter {
+    animation: email 3s infinite alternate ease-in-out;
+}
+
+.facebook {
+    animation: email 2.9s infinite alternate ease-in-out;
+}

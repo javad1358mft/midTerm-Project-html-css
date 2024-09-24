@@ -1,0 +1,10 @@
+@mixin flex-between(){
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-perfect(){
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}

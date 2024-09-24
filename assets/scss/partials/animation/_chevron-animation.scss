@@ -1,0 +1,23 @@
+
+
+
+@keyframes chevron {
+    from {
+transform: translateY(0);
+    }
+    to {
+transform: translateY(-50px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    @keyframes chevron {
+        from {
+    transform: translateY(0);
+        }
+        to {
+    transform: translateY(-10px);
+        } 
+    
+}
+}
